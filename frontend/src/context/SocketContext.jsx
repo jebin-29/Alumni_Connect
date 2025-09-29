@@ -60,7 +60,7 @@ export const SocketProvider = ({ children }) => {
 
       console.log('Initializing socket connection with token:', token.substring(0, 10) + '...');
       
-      const newSocket = io('https://alumni-connect-xt36.onrender.com', { // Updated URL here
+      const newSocket = io('https://alumni-connect-backend-zgmi.onrender.com', { // Updated URL here
         withCredentials: true,
         transports: ['polling', 'websocket'],
         autoConnect: false,
